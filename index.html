@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header-container">
+                <figure>
+                    <img src="./images/logo.svg" alt="" />
+                    <h2>Alura Latam</h2>
+                </figure>
+                <nav>
+                    <ul class="list-container">
+                        <li class="list">Encriptador</li>
+                        <li class="list">Ahorcado</li>
+                        <li class="list">Loading...</li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main-container">
+                <section class="section-question">
+                    <div class="buttons">
+                        <button id="game">Jugar</button>
+                        <button id="add-word">Agregar Palabra</button>
+                    </div>
+                </section>
+                <section class="section-game">
+                    <h2>juego del Ahorcado</h2>
+                    <figure>
+                        <img
+                            src="./images/ahorcado/0.png"
+                            alt=""
+                            class="image"
+                        />
+                    </figure>
+                    <div class="container-words"></div>
+                    <div class="container-letters"></div>
+                    <div class="buttons">
+                        <button id="new-game">Nuevo Juego</button>
+                        <button id="resign">Desistir</button>
+                        <button id="back">Atras</button>
+                    </div>
+                </section>
+                <section class="section-word">
+                    <div>
+                        <label for="">
+                            <span>Agregar: </span>
+                            <input type="text" id="input-text" />
+                        </label>
+                        <div class="buttons">
+                            <button id="save-word">Agregar Palabra</button>
+                            <button id="back-menu">Volver al menu</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="social-media">
+                    <img src="./images/github.svg" alt="" />
+                    <img src="./images/linkedin.svg" alt="" />
+                    <img src="./images/twitter.svg" alt="" />
+                </div>
+            </footer>
+        </div>
+        <script src="./scripts/app.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
